@@ -44,10 +44,9 @@ function initApp() {
 }
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-    document.addEventListener("backbutton", onBackKeyPress, false);
-}
-function onBackKeyPress() {
-	gotopage(1);
+	document.addEventListener("backbutton", function (e) {
+		e.preventDefault();
+	}, false );
 }
 </script>
 <div id="page1">
