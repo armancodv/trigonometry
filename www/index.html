@@ -42,6 +42,13 @@ function initApp() {
     position: AdMob.AD_POSITION.BOTTOM_CENTER, 
     autoShow: true } );
 }
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    document.addEventListener("backbutton", onBackKeyPress, false);
+}
+function onBackKeyPress() {
+	gotopage(1);
+}
 </script>
 <div id="page1">
 	<table cellpadding="0" cellspacing="0" class="page-table">
