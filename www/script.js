@@ -117,8 +117,8 @@ app.controller('myCtrl', function ($scope) {
 });
 
 function gotopage(page_number) {
-    // AdMob.removeBanner();
-    // initApp();
+    AdMob.removeBanner();
+    initApp();
     window.location.hash = '#page' + page_number;
     for (i = 1; i <= 4; i++) {
         if (i === page_number) {

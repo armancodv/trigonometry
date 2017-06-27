@@ -11,7 +11,7 @@
     <preference name="orientation" value="default"/>
     <preference name="target-device" value="universal"/>
     <preference name="fullscreen" value="false"/>
-    <preference name="android-minSdkVersion" value="9"/>
+    <preference name="android-minSdkVersion" value="14"/>
     <preference name="android-installLocation" value="auto"/>
     <gap:plugin name="cordova-plugin-admobpro" source="npm"/>
     <gap:plugin name="cordova-plugin-splashscreen" source="npm"/>
