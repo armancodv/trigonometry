@@ -12,10 +12,10 @@
 }
 
 body {
-	margin:0px;
+	margin:0;
 	background-color:#fafafa;
 	font-size:12px;
-	font-family: 'Montserrat',Arial;
+	font-family: 'Montserrat', Arial, serif;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -28,22 +28,27 @@ select,input {
 	width:90%;
 	padding:10px;
 	direction:ltr;
-	margin:0px;
+	margin:0;
 	border:1px solid #dddddd;
-	font-family: 'Montserrat',Arial;
+	font-family: 'Montserrat',Arial, serif;
 	font-size:14px;
 }
 
 .page-table {
 	width:100%;
 	direction:ltr;
+	margin-top: 60px;
 }
 
 .page-table-bar {
-	height:70px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:60px;
 	background-color:#ff6d3f;
 	color:#ffffff;
-	font-family: 'Montserrat',Arial;
+	font-family: 'Montserrat',Arial, serif;
 }
 
 .page-table-bar-left {
@@ -51,19 +56,17 @@ select,input {
 	padding-left:15px;
 	font-size:18px;
 	font-weight:bold;
-	border-top:3px solid #974026;
-	border-bottom:1px solid #dd5e37;
+	border-bottom:1px solid #f6693d;
 }
 
 .page-table-bar-right {
 	text-align:right;
 	padding-right:10px;
-	border-top:3px solid #974026;
-	border-bottom:1px solid #dd5e37;
+	border-bottom:1px solid #f6693d;
 }
 
 .page-table-bar-subtitle {
-	color:#ffdfd5;
+	color:#974026;
 	font-size:12px;
 	padding-left:10px;
 }
@@ -78,10 +81,8 @@ select,input {
 
 .page-table-image {
 	height:300px;
-	background-position:center;
 	background-size:contain;
-	background-repeat:no-repeat;
-	background-color:#ffffff;
+	background: #ffffff no-repeat center;
 	border-top:3px solid #fafafa;
 	border-bottom:3px solid #fafafa;
 }
@@ -97,7 +98,7 @@ select,input {
 	color:#bbbbbb;
 	text-align:center;
 	direction:ltr;
-	padding:10px 0px 60px 0px;
+	padding:10px 0 60px 0;
 	border-top:3px solid #eeeeee;
 }
 
@@ -108,17 +109,16 @@ select,input {
 	cursor:pointer;
 	background-color:#fafafa;
 	border-spacing:1px;
-	font-family: 'Montserrat',Arial;
+	font-family: 'Montserrat',Arial, serif;
 }
 
 .property-thumb {
-	background-size:cover; 
-	background-position:center;
-	background-color:#ffdfd5;
+	background-size:cover;
+	background: #ffdfd5 center;
 	color:#974026;
-	width:90px;
+	width:40px;
 	text-align:center;
-	font-size:20px;
+	font-size:14px;
 }
 
 .property-name {
@@ -137,17 +137,16 @@ select,input {
 	cursor:pointer;
 	background-color:#fafafa;
 	border-spacing:1px;
-	font-family: 'Montserrat',Arial;
+	font-family: 'Montserrat',Arial, serif;
 }
 
 .property2-thumb {
-	background-size:cover; 
-	background-position:center;
-	background-color:#f4d5cc;
+	background-size:cover;
+	background: #f4d5cc center;
 	color:#903d24;
-	width:90px;
+	width:40px;
 	text-align:center;
-	font-size:20px;
+	font-size:14px;
 }
 
 .property2-name {
@@ -166,18 +165,16 @@ select,input {
 	cursor:pointer;
 	background-color:#fafafa;
 	border-spacing:1px;
-	font-family: 'Montserrat',Arial;
+	font-family: 'Montserrat',Arial, serif;
 }
 
 .about-thumb {
-	background-size:cover; 
-	background-position:center;
-	width:90px;
-	background-color:#eeeeee;
+	background-size:cover;
+	width:40px;
+	background: #eeeeee center;
 	color:#999999;
-	width:90px;
 	text-align:center;
-	font-size:20px;
+	font-size:14px;
 }
 
 .about-name {
@@ -222,7 +219,7 @@ select,input {
 	width:80px;
 	text-align:left;
 	padding-left:10px;
-	font-family: 'Montserrat',Arial;
+	font-family: 'Montserrat',Arial, serif;
 	font-size:14px;
 	font-weight:bold;
 }
@@ -254,7 +251,7 @@ select,input {
 	text-align:left;
 	padding-left:10px;
 	font-size:14px;
-	font-family: 'Montserrat',Arial;
+	font-family: 'Montserrat',Arial, serif;
 	font-weight:bold;
 }
 
@@ -262,7 +259,7 @@ select,input {
 	color:#333333;
 	text-align:center;
 	font-size:18px;
-	font-family: 'Montserrat',Arial;
+	font-family: 'Montserrat',Arial, serif;
 }
 
 .identity {
@@ -280,25 +277,27 @@ select,input {
 	text-align:left;
 	padding:10px;
 	font-size:14px;
-	font-family: 'Montserrat',Arial;
+	font-family: 'Montserrat',Arial, serif;
 	font-weight:bold;
 }
 
 .identity-formula {
 	color:#333333;
-	text-align:center;
+	text-align:left;
 	font-size:18px;
-	font-family: 'Montserrat',Arial;
-	padding:10px;
+	font-family: 'Montserrat', Arial, serif;
+	padding:20px 10px;
+	border-bottom: 1px solid #eee;
 }
 
 .button {
-	height:35px;
+	height:30px;
+	border-radius: 30px;
 	background:#dd5e37;
 	border:1px solid #d45a35;
 	float:right;
 	margin:5px;
-	padding:0px 10px 0px 10px;
+	padding:0 10px 0 10px;
 	color:#ffffff;
 	text-align:center;
 	font-weight:normal;
@@ -315,10 +314,11 @@ select,input {
 
 
 .paragraph {
-	font-family: 'Montserrat',Arial;
+	font-family: 'Montserrat',Arial, serif;
 	font-size:12px;
 	color:#999999;
 	direction:ltr;
 	text-align:left;
+	line-height: 200%;
 	padding:20px 10px 10px 10px;
 }

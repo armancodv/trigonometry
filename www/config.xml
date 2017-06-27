@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.armanco.trigonometry" version="1.0.1" >
-	<name>Trigonometry</name>
-	<description>This app has two section, first one is a complete trigonometric calculator and another is a complete list of trigonometric identities and formulas.</description>
-	<author href="http://arman.co.com">armanco</author>
-    <preference name="permissions"    		      value="none" />
-	<preference name="phonegap-version" 		  value="cli-6.0.0" />
-    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
-    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
-    <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->
-    <preference name="android-minSdkVersion"      value="9" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
-    <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
-    <gap:plugin name="cordova-plugin-admobpro" source="npm" />
-    <icon src="res/icon/icon.png" />
-	<icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
-    <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
-    <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
-    <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />
-    <icon src="res/icon/android/icon-144-xxhdpi.png"  gap:platform="android"    gap:qualifier="xxhdpi" />
-    <icon src="res/icon/android/icon-192-xxxhdpi.png"  gap:platform="android"    gap:qualifier="xxxhdpi" />
-    <gap:splash src="res/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
-	<gap:splash src="res/screen/android/screen-xhdpi-landscape.png" gap:platform="android" gap:density="xhdpi" width="1280" height="720" />
-	<gap:splash src="res/screen/android/screen-hdpi-landscape.png"  gap:platform="android" gap:density="hdpi" width="800" height="480" />
-	<gap:splash src="res/screen/android/screen-mdpi-landscape.png"  gap:platform="android" gap:density="mdpi" width="480" height="320" />
-	<gap:splash src="res/screen/android/screen-ldpi-landscape.png"  gap:platform="android" gap:density="ldpi" width="320" height="200" />
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.armanco.trigonometry"
+        version="2.0.1">
+    <name>Trigonometry</name>
+    <description>This app has two section, first one is a complete trigonometric calculator and another is a complete
+        list of trigonometric identities and formulas.
+    </description>
+    <author href="http://arman.co.com">armanco</author>
+    <preference name="permissions" value="none"/>
+    <preference name="phonegap-version" value="cli-6.5.0"/>
+    <preference name="orientation" value="default"/>
+    <preference name="target-device" value="universal"/>
+    <preference name="fullscreen" value="false"/>
+    <preference name="android-minSdkVersion" value="9"/>
+    <preference name="android-installLocation" value="auto"/>
+    <gap:plugin name="cordova-plugin-admobpro" source="npm"/>
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm"/>
+    <gap:plugin name="cordova-plugin-statusbar" source="npm"/>
+    <icon src="res/icon/icon.png"/>
+    <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
+    <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
+    <icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi"/>
+    <icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi"/>
+    <icon src="res/icon/android/icon-144-xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi"/>
+    <icon src="res/icon/android/icon-192-xxxhdpi.png" gap:platform="android" gap:qualifier="xxxhdpi"/>
+    <preference name="StatusBarOverlaysWebView" value="true"/>
+    <preference name="StatusBarBackgroundColor" value="#f6693d"/>
+    <preference name="SplashScreen" value="splash"/>
+    <preference name="SplashScreenDelay" value="1500"/>
+    <preference name="SplashMaintainAspectRatio" value="true"/>
+    <splash src="res/screen/screen.png"/>
 </widget>
